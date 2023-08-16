@@ -55,7 +55,7 @@ body {
 }
 
 .navbar {
-  box-shadow: 0px 5px 10px 0px #89837e;
+  /* box-shadow: 0px 5px 10px 0px #89837e; */
   position: fixed;
   width: 100%;
   background: #fff;
@@ -134,8 +134,8 @@ body {
 .about {
   padding: 50px 0;
   height: 80vh;
-  background: #f8ad9d;
-  background: url('images/chef.png');
+  /* background: #f8ad9d; */
+  /* background: url('images/chef.png'); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -159,11 +159,16 @@ body {
   margin: 1.5% 0%;
 }
 
+.about-wrapper .about-text h2 span{
+  font-size: 1.6rem;
+  color: #912626;
+}
+
 .about-wrapper .about-text p {
   font-size: 1.2rem;
   color: #623838;
   box-sizing: border-box;
-  padding-right: 45%;
+  /* padding-right: 45%; */
 }
 
 .about-img {
@@ -229,6 +234,7 @@ body {
   margin: auto;
   max-height: 300px;
   object-fit: cover;
+  border-radius: 16px;
   object-position: center;
 }
 
@@ -451,7 +457,7 @@ body {
 #footer h2 {
   text-align: center;
   font-size: 1.8rem;
-  padding: 2.6rem;
+  padding: 1rem;
   font-weight: 500;
   color: #fff;
   background: rgb(65, 65, 65);
@@ -460,6 +466,9 @@ body {
 /* ......../ media query /.......... */
 
 @media (max-width: 768px) {
+  .about-wrapper .about-text h2 span{
+    display: block;
+  }
   .navbar {
     opacity: 0.95;
   }
@@ -573,14 +582,19 @@ body {
 
   .food-type:not(:last-child) {
     margin-bottom: 3rem;
+    border-radius: 16px;
   }
 
   .food-type {
     box-shadow: 5px 5px 10px 0 #aaa;
+    border-radius: 16px;
   }
 
   .img-container {
     margin: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
   }
 }
 
